@@ -1,0 +1,29 @@
+{
+  "name": "dados_app",
+  "version": "1.0.0",
+  "description": "app de dados pessoais",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+   "engines": {
+    "node": "10.18.1",
+    "npm": "6.13.4"
+  },
+
+  "author": "Aureo Paquete",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.2"
+    
+  }
+
+}
+
+
+

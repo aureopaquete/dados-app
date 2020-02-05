@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Dados</title>
+</head>
+<body>
+  <h2>Lista dos Dados<h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <td>Nome</td>
+        <td>Idade</td>
+        <td>Altura</td>
+      </tr>
+    </thead>
+    <tbody>
+    <% dados.forEach(function(details) { %>
+      <tr>
+        <td><%= details.nome %></td>
+        <td><%= details.idade %></td>
+        <td><%= details.altura %></td>
+	<td><a href="/edit/<%= details._id %>">Editar</a> | <a href="/delete/<%= details._id %>">Apagar</a></td>
+      </tr>
+    <% }) %>
+    </tbody>
+    <button><a href="/">Inserir Novo</a></button>
+</body>
+</html>

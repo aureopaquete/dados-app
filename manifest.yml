@@ -1,0 +1,5 @@
+applications:
+- name: dados-app
+  random-route: true
+  memory: 256M
+  command: node index.js
